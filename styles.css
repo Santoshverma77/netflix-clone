@@ -1,0 +1,884 @@
+@import url('https://fontmeme.com/fonts/stand-alone-mjtype-font/');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Netflix Font', sans-serif;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+body {
+    background: #000000;
+}
+
+header {
+    background-image: url(./assets/img/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 68.5rem;
+    border-bottom: .8rem solid #222222;
+}
+
+header .bg_shadow {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+}
+
+nav {
+    padding: 1.75rem 17rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li .logo {
+    width: 15rem;
+}
+
+nav ul li .login_btn {
+    background-color: #e50913;
+    color: white;
+    padding: .75rem 1.5rem;
+    border-radius: .6rem;
+    border: none;
+    transition: .2s;
+    cursor: pointer;
+    font-weight: 550;
+    font-size: 1.45rem;
+}
+
+nav ul li .login_btn:hover {
+    background-color: #c50b14;
+}
+
+header .header_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+header .header_content h1 {
+    color: white;
+    font-size: 5.5rem;
+    font-weight: bold;
+
+}
+
+header .header_content h3 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 2rem 0;
+}
+
+header .header_content h4 {
+    color: white;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+header .header_content .email_sec {
+    margin: 2rem 0;
+    display: flex;
+    gap: .8rem;
+}
+
+header .header_content .email_sec input {
+    background-color: #1f1919;
+    border: 1px solid grey;
+    color: lightgrey;
+    padding: 1.6rem;
+    outline: none;
+    border-radius: .45rem;
+    width: 34rem;
+}
+
+header .header_content .email_sec .get_started_btn {
+    background-color: #e50913;
+    border: none;
+    color: white;
+    height: 100%;
+    padding: 1rem 2rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+    border-radius: .45rem;
+    transition: .2s;
+    cursor: pointer;
+}
+
+header .header_content .email_sec .get_started_btn i {
+    margin-left: 1.2rem;
+}
+
+header .header_content .email_sec .get_started_btn:hover {
+    background-color: #c50b14;
+}
+
+header .header_content .email_sec input::placeholder {
+    color: lightgrey;
+}
+
+
+
+
+section {
+    padding: 10rem 15rem;
+    border-bottom: .8rem solid #222222;
+}
+
+#watchTv {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+#watchTv .content_area {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+#watchTv .content_area h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+#watchTv .content_area h3 {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin-top: 1.5rem;
+}
+
+#watchTv .screen_area img {
+    position: relative;
+    z-index: 1;
+}
+
+#watchTv .screen_area {
+    position: relative;
+}
+
+#watchTv .video_area {
+    position: absolute;
+    top: 9rem;
+    left: 8rem;
+}
+
+
+/* downloadShows starting form here */
+#downloadShows {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+#downloadShows .content_area {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+#downloadShows .content_area h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+#downloadShows .content_area h3 {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin-top: 1.5rem;
+}
+
+#downloadShows .screen_area {
+    position: relative;
+}
+
+#downloadShows .screen_area img {
+
+    z-index: 1;
+    width: 90%;
+}
+
+#downloadShows .screen_area .box_area {
+    position: absolute;
+    bottom: 3rem;
+    left: 12.5rem;
+    background-color: black;
+    border: 2px solid grey;
+    border-radius: .7rem;
+    padding: .75rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+}
+
+#downloadShows .screen_area .box_area img {
+    width: 5rem;
+}
+
+#downloadShows .screen_area .box_area .text_area {
+    padding-left: 1.5rem;
+}
+
+#downloadShows .screen_area .box_area .text_area h5 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#downloadShows .screen_area .box_area .text_area h6 {
+    color: #0071eb;
+    font-size: 1.3rem;
+}
+
+#downloadShows .screen_area .box_area i {
+    color: white;
+    padding-right: 1rem;
+    margin-left: auto;
+    font-size: 1.75rem;
+}
+
+/* WATCH EVERYWHERE SECTION STARTS HERE */
+#watchEverywhere {
+    display: grid;
+    grid-template-columns: repeat(1, 34%);
+}
+
+#watchEverywhere .content_area {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+
+}
+
+#watchEverywhere .content_area h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+#watchEverywhere .content_area h3 {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin-top: 1.5rem;
+}
+
+
+
+/* kids profile section starting form here */
+#kidsProfile {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+#kidsProfile .content_area {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+#kidsProfile .content_area h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+#kidsProfile .content_area h3 {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin-top: 1.5rem;
+}
+
+#kidsProfile .screen_area {
+    position: relative;
+}
+
+#kidsProfile .screen_area img {
+    width: 90%;
+}
+
+/* faq's section starting here */
+#faq h1 {
+    font-size: 4.8rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+#faq .faq_area {
+    margin: 2.5rem 0;
+}
+
+#faq .faq_area .faq {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 2.75rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#faq .faq_area .faq:hover {
+    background-color: #454545;
+
+}
+
+#faq .faq_area .faq h4 {
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+
+#faq .faq_area .faq i {
+    font-size: 2.5rem;
+}
+
+#faq h4 {
+    color: white;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+#faq .email_sec {
+    margin: 2rem 0;
+    display: flex;
+    gap: .8rem;
+    justify-content: center;
+}
+
+#faq .email_sec input {
+    background-color: #1f1919;
+    border: 1px solid grey;
+    color: lightgrey;
+    padding: 1.6rem;
+    outline: none;
+    border-radius: .45rem;
+    width: 34rem;
+}
+
+#faq .email_sec .get_started_btn {
+    background-color: #e50913;
+    border: none;
+    color: white;
+    height: 100%;
+    padding: 1rem 2rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+    border-radius: .45rem;
+    transition: .2s;
+    cursor: pointer;
+}
+
+#faq .email_sec .get_started_btn i {
+    margin-left: 1.2rem;
+}
+
+#faq .email_sec .get_started_btn:hover {
+    background-color: #c50b14;
+}
+
+#faq .email_sec input::placeholder {
+    color: lightgrey;
+}
+
+footer {
+    padding: 5rem 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer h4 {
+    color: #ffffffb3;
+    font-size: 1.7rem;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+footer .footer_area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer .footer_area .col {
+    margin-top: 1rem;
+}
+
+footer .footer_area .col ul li {
+    color: #ffffffb3;
+    list-style: none;
+    font-size: 1.4rem;
+    margin: 1.3rem 0;
+    text-decoration: underline;
+}
+
+footer select {
+    color: white;
+    font-size: 1.4rem;
+    background-color: #1f1919;
+    padding: .6rem 2.25rem;
+    border-radius: .5rem;
+}
+
+footer .tranlation_area {
+    position: relative;
+}
+
+footer .tranlation_area img {
+    position: absolute;
+    top: .65rem;
+    left: .5rem;
+}
+
+footer p {
+    color: #ffffffb3;
+    font-size: 1.4rem;
+    padding-top: 2rem;
+}
+
+@media (max-width:1024px) and (min-width:769px) {
+    nav {
+        padding: 2rem 3rem;
+    }
+
+    nav ul li .logo {
+        width: 15rem;
+    }
+
+    header .header_content h1 {
+        font-size: 4.5rem;
+    }
+
+    /* watch tv section start here */
+    section {
+        padding: 7rem 4rem;
+    }
+
+    #watchTv {
+        display: grid;
+        grid-template-columns: repeat(2, 470px);
+    }
+
+    #watchTv .screen_area img {
+        width: 100%;
+    }
+
+    #watchTv .video_area {
+        position: absolute;
+        top: 7rem;
+        left: 6rem;
+        width: 100%;
+    }
+
+    #watchTv .video_area video {
+        width: 75%;
+    }
+
+    /* downloadShows starting form here */
+    #downloadShows .screen_area .box_area {
+        left: 8rem;
+        width: 26rem;
+    }
+
+    /* footer code */
+    footer {
+
+        width: 95%;
+
+    }
+}
+
+@media (max-width:768px) and (min-width:540px) {
+    nav {
+        padding: 2rem 3rem;
+    }
+
+    nav ul li .logo {
+        width: 9.5rem;
+    }
+
+    header .header_content h1 {
+        font-size: 3.5rem;
+    }
+
+    header .header_content .email_sec input {
+
+        padding: 2rem;
+        height: 6.5rem;
+        width: 42rem;
+    }
+
+    /* watch tv section start here */
+    section {
+        padding: 7rem 4rem;
+    }
+
+    #watchTv {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #watchTv .content_area {
+        align-items: center;
+    }
+
+    #watchTv .content_area h1 {
+        color: white;
+        font-size: 3rem;
+    }
+
+    #watchTv .content_area h3 {
+
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+
+    /* downloadShows starting form here */
+    #downloadShows {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #downloadShows .screen_area {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+
+
+    #downloadShows .content_area h1 {
+
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #downloadShows .content_area h3 {
+        font-size: 1.85rem;
+        text-align: center;
+    }
+
+    #downloadShows .screen_area img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #downloadShows .screen_area .box_area {
+        width: 37rem;
+
+    }
+
+    /* watch everywhere section start here */
+
+
+    #watchEverywhere {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #watchEverywhere .content_area {
+        align-items: center;
+    }
+
+    #watchEverywhere .content_area h1 {
+        color: white;
+        font-size: 3rem;
+    }
+
+    #watchEverywhere .content_area h3 {
+
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+
+    /* kids profile section */
+    #kidsProfile {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #kidsProfile .screen_area {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #kidsProfile .content_area h1 {
+
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #kidsProfile .content_area h3 {
+        font-size: 1.85rem;
+        text-align: center;
+    }
+
+    #kidsProfile .screen_area img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* footer code */
+    footer {
+
+        width: 90%;
+    }
+
+    footer .footer_area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .footer_area .col {
+        margin-top: -1rem;
+    }
+}
+
+@media (max-width:539px) {
+    header {
+
+        height: 50rem;
+
+    }
+
+    nav {
+        padding: 2rem 3rem;
+    }
+
+    nav ul li .logo {
+        width: 9.5rem;
+    }
+
+    header .header_content {
+        padding: 0 4.5rem;
+    }
+
+    header .header_content h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    header .header_content h3 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    header .header_content h4 {
+        font-size: 1.7rem;
+        line-height: 2.75rem;
+        text-align: center;
+    }
+
+    header .header_content .email_sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.75rem;
+    }
+
+    header .header_content .email_sec .get_started_btn {
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+    }
+
+
+    /* watch tv section start here */
+    section {
+        padding: 7rem 4rem;
+    }
+
+    #watchTv {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #watchTv .content_area {
+        align-items: center;
+    }
+
+    #watchTv .content_area h1 {
+        color: white;
+        font-size: 3rem;
+    }
+
+    #watchTv .content_area h3 {
+
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    #watchTv .screen_area img {
+        width: 100%;
+    }
+
+    #watchTv .screen_area video {
+        width: 100%;
+    }
+
+    #watchTv .video_area {
+        top: 5rem;
+        left: 4rem;
+    }
+
+    /* downloadShows starting form here */
+    #downloadShows {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #downloadShows .screen_area {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+
+
+    #downloadShows .content_area h1 {
+
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #downloadShows .content_area h3 {
+        font-size: 1.85rem;
+        text-align: center;
+    }
+
+    #downloadShows .screen_area img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #downloadShows .screen_area .box_area {
+        width: 27rem;
+        left: 2rem;
+        bottom: 0;
+        padding: 0 1rem;
+
+    }
+
+
+    /* watch everywhere section starts here */
+    #watchEverywhere {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #watchEverywhere .content_area {
+        align-items: center;
+    }
+
+    #watchEverywhere .content_area h1 {
+        color: white;
+        font-size: 3rem;
+    }
+
+    #watchEverywhere .content_area h3 {
+
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+
+    /* kids profile starting form here */
+    #kidsProfile {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #kidsProfile .screen_area {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+
+
+    #kidsProfile .content_area h1 {
+
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #kidsProfile .content_area h3 {
+        font-size: 1.85rem;
+        text-align: center;
+    }
+
+    #kidsProfile .screen_area img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /*  faq's section starting here */
+    #faq h1 {
+        font-size: 2.8rem;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+
+
+    #faq .faq_area .faq {
+
+        padding: 2.25rem 2rem;
+    }
+
+    #faq .faq_area .faq h4 {
+        font-size: 2rem;
+
+    }
+
+    #faq .faq_area .faq i {
+        font-size: 2.2rem;
+    }
+
+    #faq h4 {
+        font-size: 1.7rem;
+        line-height: 2.75rem;
+        text-align: center;
+    }
+
+    #faq .email_sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.75rem;
+    }
+
+    #faq .email_sec .get_started_btn {
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+    }
+
+    /* footer code */
+    footer {
+
+        width: 90%;
+    }
+
+    footer .footer_area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .footer_area .col {
+        margin-top: -1rem;
+    }
+}
